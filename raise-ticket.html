@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-IN" data-base=".">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raise a Support Ticket | Website Changes &amp; Issues — digitaltech4u</title>
+  <meta name="description" content="Existing customers can create a support ticket. A unique ticket number is generated and emailed to our team.">
+  <link rel="canonical" href="https://digitaltech4u.com/raise-ticket.html">
+  <link rel="icon" href="images/favicon-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="site-announce"></div>
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="page-hero">
+      <img class="hero__bg" src="images/support-24-7.png" alt="Raise a website support ticket">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">digitaltech4u · India's Best Web Agency</p>
+        <h1>Issue with your website? Raise a ticket</h1>
+        <p class="crumbs">Home &gt; <span>Support Tickets</span></p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container consult-wrap">
+        <div>
+          <h2>Change requests &amp; <em>fixes</em></h2>
+          <p>Existing customers can request content edits, bug fixes, new sections or urgent downtime help. A random ticket number is generated instantly. Our experts get in touch within 24 hours. 24/7 intake.</p>
+          <p class="muted">The on-site API DigitalTechAPI.createTicket() stores the ID locally and emails developersoftware.support@gmail.com.</p>
+        </div>
+        <form class="consult-card" id="ticketForm" data-ticket="true">
+          <h3>Create support ticket</h3>
+          <input class="field" name="name" placeholder="Your Name" required>
+          <input class="field" name="email" type="email" placeholder="Your Email" required>
+          <input class="field" name="phone" placeholder="Phone Number">
+          <select class="field" name="type">
+            <option value="website-issue">Issue with website</option>
+            <option value="change-request">Request a change</option>
+            <option value="downtime">Site down / urgent</option>
+            <option value="billing">Billing / maintenance</option>
+            <option value="other">Other</option>
+          </select>
+          <textarea class="field" name="message" placeholder="Describe the issue or change" required></textarea>
+          <button class="btn btn-red" type="submit">Generate ticket</button>
+          <div class="success"></div>
+          <div class="error"></div>
+          <div class="ticket-box">Your ticket ID<br><span class="ticket-id"></span><p>Save this ID. Track it any time on the Track Ticket page.</p></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/articles.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
